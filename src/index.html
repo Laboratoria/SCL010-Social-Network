@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comunidad Laboratorian!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+  <script>
+  const config = {
+    apiKey: "AIzaSyAm9PksGwsjWlDJvuei60zDvWl_2fRaMzk",
+    authDomain: "red-social-laboratoria-prueba.firebaseapp.com",
+    databaseURL: "https://red-social-laboratoria-prueba.firebaseio.com",
+    projectId: "red-social-laboratoria-prueba",
+    storageBucket: "red-social-laboratoria-prueba.appspot.com",
+    messagingSenderId: "89746051833",
+    appId: "1:89746051833:web:cc5c70ff56824a24"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </head>
+  <body class="color">
+  <!--Start Header -->
+  <header>
+    <nav>
+      <div class="logo">
+      <a href="index.html"><img  src="assets/img/Captura3.JPG" alt="logoComunidad laboratoria"></a>
+      </div>
+      <div class="nav-links">
+       <a href="/" class="current">Inicio</a>
+       <a href="https:www.laboratoria.la" target="_blank">Laboratoria</a>
+       <a href="https://www.laboratoria.la/contactenos">Contacto</a>
+      </div>
+     </nav>
+  </header>
+  <!--End Header-->
+  <!--Start Main-->
+   <main>
+      <section>
+      <div class="main-title">
+          <div class="intro">
+          <strong><h1>Bienvenida a Laboratorians!!! </h1></strong>
+          </div>
+      </div>
+     </section>
+   <section class="content">
+    <strong> <h2>Tu Red Social, para compartir información, vivencias , Tips  y todo lo que quieras con mujeres del mundo Tech.</h2> </strong>      
+    <img class="avatar" id="avatar" src="assets/img/usuario.jpg" alt="mujer_programando">
+    <div class="buttonPpal" id="container">
+      <a href="#/login"class= "buttons"> Iniciar Sesion</a>
+    </div>
+       <br>
+      <div class="buttonPpal" id="container">
+      <a href="#/register" class= "buttons"> Crear Cuenta </a>
+    </div>
+ </section>
+
+<!--Start HTML DINAMICO-->    
+    </div>
+
+      <div id="dinamic" class="dinamic"></div>
+    </div>
+<!--End HTML DINAMICO   
+
+    <script  type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>--> 
+       </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--Start Footer-->
+     <footer class="footer">
+        <div class="footer-info">
+          <img class="logo" id="logo" src="assets/img/laboratoria.JPG" alt="logo Laboratoria Negro"> 
+          <p>&copy; Copyright Comunidad Laboratorian ! 2019 | Design and Development by AlPaCyAd</p>
+        </div>
+    <div class="subscribe">
+      <p>Subscribe to our news</p>
+      <input type="email" placeholder="Enter your email">
+      <button id="subscribe-btn">Subscribe</button>
+    </div> 
+</footer>
+<!--End Footer-->
+<script type="module" src="./app.js"></script>
+</body>
+</html>
+
+ 
