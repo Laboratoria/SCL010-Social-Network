@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comunidad Laboratorian!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-storage.js"></script>
+  <script>
+  const config = {
+    apiKey: "AIzaSyAm9PksGwsjWlDJvuei60zDvWl_2fRaMzk",
+    authDomain: "red-social-laboratoria-prueba.firebaseapp.com",
+    databaseURL: "https://red-social-laboratoria-prueba.firebaseio.com",
+    projectId: "red-social-laboratoria-prueba",
+    storageBucket: "red-social-laboratoria-prueba.appspot.com",
+    messagingSenderId: "89746051833",
+    appId: "1:89746051833:web:cc5c70ff56824a24"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </head>
+  <body class="color">
+  <!--Start Header -->
+  <header class="log-nav">
+      <div class="logo">
+      <a href="index.html"><img  src="assets/img/Captura3.JPG" alt="logoComunidad laboratoria"></a>
+    </div>
+      <div class="nav-links">
+       <a href="http://localhost:3000">Inicio</a>
+       <a href="https:www.laboratoria.la" target="_blank">Laboratoria</a>
+       <a href="#">Contacto</a>
+      </div>
+  </header>
+  <!--End Header-->
+  <!--Start Main-->
+   <main>
+      <div class="main-title">
+          <div class="intro">
+          <strong><h1>Bienvenida a Laboratorians!!! </h1></strong>
+          </div>
+      </div>
+
+
+<!--Start HTML DINAMICO-->    
+    </div>
+
+      <div id="dinamic" class="dinamic"></div>
+
+    </div>
+
+
+<!--End HTML DINAMICO   
+
+    <script  type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>--> 
+       </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--Start Footer-->
+     <footer class="footer">
+        <div class="footer-info">
+          <img class="logoLab" id="logo" src="assets/img/laboratoria.JPG" alt="logo Laboratoria Negro"> 
+          <p>&copy; Copyright Comunidad Laboratorian 2019 
+            <br>Design and Development by AlPaCyAd</p>
+        </div>
+    <div class="subscribe">
+      <p>Subscribe to our news</p>
+      <input type="email" placeholder="Enter your email">
+      <button id="subscribe-btn">Subscribe</button>
+    </div> 
+</footer>
+<!--End Footer-->
+<script type="module" src="./app.js"></script>
+</body>
+</html>

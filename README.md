@@ -1,315 +1,167 @@
-# Creando una Red Social
+# ¡Comunidad Laboratorians!
+​
+ ![logo Comunidad laboratorians](src/assets/img/Captura3.JPG) 
 
 ## Índice
-
-* [Preámbulo](#preámbulo)
-* [Resumen del proyecto](#resumen-del-proyecto)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Consideraciones generales](#consideraciones-generales)
-* [Parte obligatoria](#parte-obligatoria)
-* [Hacker Edition](#hacker-edition)
+​
+* [Definición del Producto](#definicion)
+* [Link de la APP ](#link)
+* [Historias de Usuarios](#historias-de-usuarios)
+* [Planificación](#planificacion)
+* [Diseño de Interfaz](#diseño)
 * [Consideraciones técnicas](#consideraciones-técnicas-front-end)
-* [Contenido de referencia](#pistas-/-tips-/-lecturas-complementarias)
-
-***
-
-## Preámbulo
-
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
-sociales han invadido nuestras vidas. Las amamos u odiamos, y much@s no podemos
-vivir sin ellas.
-
-Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
-en una ronda de financiamiento con inversionistas, se presentó una red social
-para químicos en la que los usuarios podían publicar artículos sobre sus
-investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
-de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
-más comentado.
-
-## Resumen del proyecto
-
-En este proyecto construirás una Red Social sobre lo que decidan tú y tu equipo.
-Podría ser, por ejemplo, sobre alimentación saludable, feminismo, educación,
-salud, energías renovables, amantes de las [empanadas](https://es.wikipedia.org/wiki/Empanada) o de
-los [tacos de canasta](https://es.wikipedia.org/wiki/Taco), etc.
-
-Tu Red Social tendrá que permitir a cualquier usuario crear una cuenta de
-acceso y loguearse con ella; crear, editar, borrar y _"likear"_ publicacciones.
-
-## Objetivos de Aprendizaje
-
-El objetivo principal de aprendizaje de este proyecto es construir una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
-[_responsive_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive)
- (con más de una vista / página) en la que podamos **leer y escribir datos.**
-
-## Consideraciones generales
-
-- Este proyecto se debe "resolver" en tríos.
-
-- La lógica del proyecto debe estar implementada completamente en JavaScript (ES6+),
-HTML y CSS :smiley:. Para este proyecto no está permitido utilizar
-frameworks o librerías de CSS y JS.
-
-- La división del trabajo debe permitir que todo el equipo
-practique el aprendizaje de todo lo esperado **cada sprint**. _No se dividan el
-trabajo como en una fábrica._
-
-- Trabajen en una sola historia por vez, no pueden avanzar a la siguiente sin
-haber completado la anterior.
-
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-## Parte obligatoria
-
-### General
-
-Este proyecto no incluye un _boilerplate_, así es que tendrás que definir la
-estructura de carpetas y escribir tus propias Pruebas Unitarias (tests). Para
-hacerlo, puedes guiarte de los proyectos anteriores.
-
-### Definición del producto
-
-En el `README.md` cuéntanos brevemente cómo descubriste las necesidades de los
-usuarios y cómo llegaste a la definición final de tu producto. Comparte fotos de
-entrevistas (si las tienes), cuestionarios y tus sketches/(bocetos).
-
-Es importante que detalles:
-
-* Quiénes son los principales usuarios de producto.
-* Qué problema resuelve el producto / para qué le servirá a estos usuarios.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarixs, escribe las Historias de
-Usuario que representen todo lo que necesitan hacer/ver en la Red Social.
-
-Cada una de tus Historias de Usuario debe tener:
-- **Criterios de Aceptación:** todo lo que debe ocurrir para satisfacer las
-  necesidades del usuario.
-
-- **Definición de terminado:** todos los aspectos técnicos que deben cumplirse
-para que, como equipo, sepan que esa historia está terminada y lista
-para publicarse. **Todas** tus Historias de Usuario (salvo excepciones), deben
-incluir estos aspectos en su Definición de Terminado (más todas las que
-  necesiten agregar):
-
-  * Debe ser una SPA.
-  * Debe ser _responsive_.
-  * Debes haber recibido _code review_ de al menos una compañera de otro equipo.
-  * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-  * Hiciste _pruebas_ de usabilidad e incorporaste el _feedback_ del usuario.
-  * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
-
-### Diseño de la Interfaz de Usuario (prototipo de baja fidelidad)
-
-Debes definir cuál será el flujo que seguirá el usuario dentro de tu producto y
-con eso deberás diseñar la Interfaz de Usuario (UI por sus siglas en inglés) de
-esta red social que siga este flujo.
-Este diseño debe representar la solución que se implementará finalmente en
-código.
-
-### Responsive
-
-Debe verse bien en dispositivos de pantallas grandes
-(computadoras/es, laptops, etc.) y pequeñas (tablets, celulares, etc.). Te
-sugerimos seguir la técnica de `mobile first` (más detalles sobre esta técnica
-al final).
-
-### Pruebas unitarias (unit tests)
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_, y _branches_.
-
-### Implementación de la Interfaz de Usuario (UI y comportamiento de Interfaz de Usuario)
-
-Estas son consideraciones para que escribas las Definiciones de Terminado de
-tus H.U.:
-
-#### Creación de cuenta de usuario e inicio de sesión
-
-* Login con Firebase:
-  - Para el login y las publicaciones en el muro puedes utilizar [Firebase](https://firebase.google.com/products/database/)
-  - Creación de cuenta de acceso y autenticación con cuenta de correo y
-    contraseña, y con cuenta de Google.
-* Validaciones:
-  - La aplicación solo permitirá el acceso a usuarios con cuentas válidas.
-  - No pueden haber usuarios repetidos.
-  - La cuenta de usuario debe ser un correo electrónico válido.
-  - Lo que se escriba en el campo (_input_) de contraseña debe ser secreto.
-* Comportamiento:
-  - Al enviarse un formulario de registro o inicio de sesión, debe validarse.
-  - En caso haya errores, el sistema debe mostrar mensajes de error para
-    ayudar al usuario a corregirlos.
-  - Al recargar la aplicación, se debe verificar si el usuario está
-    logueado antes de mostrarle el contenido.
-
-
-#### Muro/timeline de la red social
-
-* Validaciones:
-  - Al apretar el botón de publicar, debe validar que exista contenido en
-  el _input_.
-* Comportamiento:
-  - Poder publicar un _post_.
-  - Poder dar y quitar _like_ a una publicación.
-  - Llevar un conteo de los _likes_.
-  - Poder eliminar un post específico.
-  - Pedir confirmación antes de eliminar un _post_.
-  - Al dar _click_ para editar un _post_, debe cambiar el texto por un _input_
-    que permita editar el texto y luego guardar los cambios.
-  - Al guardar los cambios debe cambiar de vuelta a un texto normal pero con la
-    información editada.
-  - Al recargar la página debo de poder ver los textos editados.
-
-### Hacker edition
-
-* Permite crear posts con imágenes.
-* Permite buscar usuarios, agregar y eliminar "amigos".
-* Permite definir la privacidad de los _posts_ (público o solamente para amigos).
-* Permite ver su muro de cualquier usuario "no-amigo" (solamente los
-  posts _públicos_).
-* Permite comentar o responder una publicación.
-* Permite editar perfil.
-
-### Consideraciones técnicas Front-end
-
-El corazón de este proyecto incluye:
-
-* Separar la manipulación del DOM de la lógica (Separación de responsabilidades).
-* Contar con multiples vistas para esto tu aplicacion debera ser una
- [Single Page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
-* Que el sitio sea responsive, ya dicho.
-* Alterar y persistir datos. Los datos que agregues o modifiques deberán
-  persistir a lo largo de la aplicación, te recomendamos que uses
-  [Firebase](https://firebase.google.com/).
-
-Además, podrías agregar algunas tareas nuevas de acuerdo a tus decisiones:
-
-* Recuerda que no hay un setup de **tests** definido, dependerá de
-  la estructura de tu proyecto también, pero algo que no debes de olvidar es
-  pensar en éstas pruebas, incluso te podrían ayudar a definir la estructura y
-  nomenclatura de tu lógica.
-
-### Consideraciones técnicas UX
-
-Desde el punto de vista de UX, deberás:
-
-* Hacer al menos 2 o 3 entrevistas con usuarios.
-* Hacer un  prototipo de baja fidelidad.
-* Asegurarte de que la implementación en código siga los lineamientos del
-  diseño.
-* Hacer sesiones de testing con el producto en HTML.
-
-## Entrega
-
-El proyecto será _entregado_ subiendo tu código a GitHub (`commit`/`push`) y la
-interfaz será desplegada usando GitHub pages u otro servicio de hosting que
-puedas haber encontrado en el camino.
-
-## Evaluación
-
-Recuerda revisar la [rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada habilidad y cada nivel. Esta es una
-lista de todas las habilidades involucradas en este proyecto y que evaluaremos
-cuando lo completes:
-
-### Habilidades Blandas/Socioemocionales
-
-| Habilidad |
-|-----------|
-| Planificación y organización |
-| Autoaprendizaje |
-| Solución de Problemas |
-| Dar y recibir feedback |
-| Adaptabilidad |
-| Trabajo en equipo |
-| Responsabilidad |
-| Comunicación eficaz |
-| Presentaciones |
-
-
-### Habilidades Técnicas, Front-end
-
-| Habilidad |
-|-----------|
-| **JavaScript** |
-| Estilo |
-| Nomenclatura/semántica |
-| Funciones/modularidad |
-| Estructuras de datos |
-| Tests |
-| **HTML** |
-| Validación |
-| Estilo |
-| Semántica |
-| SEO |
-| **CSS** |
-| DRY |
-| Responsive |
-| **SCM** |
-| Git |
-| GitHub |
-| **CS** |
-| Lógica |
-| Arquitectura |
-
-### Habilidades Técnicas, UX
-
-| Habilidad |
-|-----------|
-| User Centricity |
-| Visual Desing |
-
-***
-
-## Pistas / Tips / Lecturas complementarias
-
-### Mobile first
-
-El concepto de [_mobile first_](https://www.mediaclick.es/blog/diseno-web-responsive-design-y-la-importancia-del-mobile-first/)
-hace referencia a un proceso de diseño y desarrollo donde partimos de cómo se ve
-y cómo funciona la aplicación en un dispositivo móvil primero, y más adelante se
-ve como adaptar la aplicación a pantallas progresivamente grandes y
-características específicas del entorno desktop. Esto es en contraposición al
-modelo tradicional, donde primero se diseñaban los websites (o webapps) para
-desktop y después se trataba de _arrugar_ el diseño para que entre en pantallas
-más chicas. La clave acá es asegurarse de que desde el principio diseñan usando
-la vista _responsive_ de las herramientas de desarrollador (developer tools) del
-navegador. De esa forma, partimos de cómo se ve y comporta la aplicación en una
-pantalla y entorno móvil.
-
-### Múltiples vistas
-
-En proyectos anteriores nuestras aplicaciones habían estado compuestas de una
-sola _vista_ principal (una sóla _página_). En este proyecto se introduce la
-necesidad de tener que dividir nuestra interfaz en varias _vistas_ o _páginas_
-y ofrecer una manera de navegar entre estas vistas. Este problema se puede
-afrontar de muchas maneras: con archivos HTML independientes (cada uno con su
-URL) y links tradicionales, manteniendo estado en memoria y rederizando
-condicionalmente (sin refrescar la página), [manipulando el historial del
-navegador](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
-con [`window.history`](https://developer.mozilla.org/es/docs/Web/API/Window/history).
-En este proyecto te invitamos a explorar opciones y decidir una opción
-de implementación.
-
-### Escritura de datos
-
-En los proyectos anteriores hemos consumido (leído) datos, pero todavía no
-habíamos escrito datos (salvar cambios, crear datos, borrar, ...). En este
-proyecto tendrás que crear (salvar) nuevos datos, así como leer, actualizar y
-modificar datos existentes. Estos datos se podrán guardar de forma remota
-usando [Firebase](https://firebase.google.com/).
-
-Otras:
-
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
-* [Diseño web, responsive design y la importancia del mobile first - Media Click](https://www.mediaclick.es/blog/diseno-web-responsive-design-y-la-importancia-del-mobile-first/)
-* [Mobile First: el enfoque actual del diseño web móvil - 1and1](https://www.1and1.es/digitalguide/paginas-web/diseno-web/mobile-first-la-nueva-tendencia-del-diseno-web/)
-* [Mobile First - desarrolloweb.com](https://desarrolloweb.com/articulos/mobile-first-responsive.html)
-* [Mobile First - ZURB](https://zurb.com/word/mobile-first)
-* [Mobile First Is NOT Mobile Only - Nielsen Norman Group](https://www.nngroup.com/articles/mobile-first-not-mobile-only/)
-
-***
+​
+## Definición del Producto 
+​
+Laboratorians es una AppWeb que surge principalmente para las estudiantes y egresadas de Laboratoria en donde encuentren un espacio en común para compartir historias, consejos, reseñas, cursos, charlas, trabajos tech, ofertas de empleo, o lo que deseen publicar en la comunidad chilena o Latinoamericana.
+​
+### Usuario  
+​
+A mujeres que sean o hayan sido parte de las diferentes generaciones de bootcamps de Laboratoria en Chile y en la distintas sedes de Latinoamérica. 
+​
+### Problemáticas a abarcar 
+​
+Las problemas que detectamos son: 
+- Carencia de comunidad entre mujeres egresadas desde las primeras generaciones a la fecha. 
+- Falta de red de apoyo entre estudiantes activas de un mismo track en diferentes países. 
+- Ausencia de comunicación entre mujeres que cursen diferentes tracks. 
+- No todas las estudiantes mantienen cuentas activas en Facebook o Instagram que es donde Laboratoria oficialmente, tiene La Comunidad.
+- El contenido en RRSS antes mencionadas, suele ser de publicidad o convocatorias a  Laboratoria, más que una comunidad activa que pueda contar como red de apoyo. 
+- Existe Slack, en donde puedes encontrar a otras estudiantes, sin embargo si no pagas una suscripción mensual, la cantidad de mensajes que puedes revisar en el historial es limitada.
+​
+### Solución 
+La creación de "Laboratorians" es una appWeb donde las mujeres de Laboratoria pueden crear una cuenta, indicando si son estudiantes o egresadas y puedan ser parte de una comunidad activa de mujeres en el código, accediendo  y creando lazos con las diferentes generaciones y paises, información actualizada de diferentes temáticas relacionadas al mundo tech, informar cuales son las tendencias, invitaciones a charlas ó eventos, solicitar u ofrecer trabajos o servicios relacionados con la tecnología, para las  nuevas estudiantes recibir consejos y tips de egresadas y compañeras que hayan pasado por los mismos trabajos y  conocer nuevas amigas.
+​
+### Objetivo de la Aplicación
+​
+El objetivo principal de aprendizaje es construir una AppWeb con Single-page Application (SPA) responsive (con más de una vista / página) en la que podamos leer y escribir datos.
+​
+La interfaz permite  lo siguiente:
+​
+- Creación de cuenta de usuario e inicio de sesión 
+- Autenticación con Facebook y/o Google y/o Email utilizando Firebase 
+- Crear Muro/timeline de la red social, para publicar post, dar like a una publicación, llevar un conteo de los likes, eliminar un post específico.
+​
+## Link de la APP 
+​
+Puedes encontrar la App en el siguiente link 
+[Link](https://adrievelyn.github.io/SCL010-Social-Network/src/index.html)
+​
+## Encuesta
+​
+Se redacta y ejecuta una encuesta con el Formulario de Google Forms, para definir los parámetros generales de la aplicación, por ejemplo: ¿A qué usuario nos vamos a dirigir?, ¿Cuáles son sus necesidades?, como también para obtener claridad sobre ¿Cuál es la información más relevante a la que dichos usuarios necesitarían acceso?.
+​
+Con ésta información se plantea la jerarquización de la data y de sus funcionalidades para poder acomodarla dentro del flujo de la aplicación junto con parámetros de usabilidad (web y móvil) como también de diseño de interface (UI).
+​
+La encuesta alcanzó un total de 19 respuestas en un día y se puede encontrar haciendo click  [Encuesta](https://docs.google.com/forms/d/1t352sbh-EMpX-eMze90nhKXZ5Y4WrK_BrFf4yn-qM64/prefill)📝
+​
+- Conclusiones de la encuesta:
+![Conclusión 1](src/assets/img/resultados.png)
+![Conclusión 2](src/assets/img/resultados2.png)
+​
+A partir de los resultados pudimos obtener y definir:
+​
+- Nuestro usuario target: Comunidad de Laboratoria.
+- Información relevante para un publicar y leer en el muro: Noticias y eventos, consejos, tutoriales, tips.
+​
+##Historias de Usuario:
+​
+### Historia de Usuario 1: Crear Cuenta con Google
+	"Yo, como estudiante de Laboratoria.
+ 	Quiero, poder loguearme.
+ 	Para, acceder con Google a la Red Social Laboratorians."
+​
+➡ Criterios de aceptación: Creamos en la AppWeb con un  botón para iniciar sesión con google abriendo un pop-up para loguearse con google con su correo y contraseña. Si los datos son válidos, se crea un perfil y le permite entrar a Laboratorians.
+
+### Historia de Usuario 2: Crear Cuenta con Registro a través de formulario 
+	"Yo, como estudiante del bootcamp. 
+ 	Quiero, poder registrarme en Laboratorians con cualquier correo y contraseña.
+ 	Para, poder ingresar de forma expedita y segura."
+
+ ➡ Criterios de aceptación: Creamos en la AppWeb  un botón que permite registrarse  "creando cuenta", para que el usuario pueda escribir correo y contraseña, si el correo no es válido se enviará un mensaje de error y se enviará un correo de verificación cuando la cuenta ha sido creada exitosamente.
+
+### Historia de Usuario 3: Iniciar Sesión ( con cuenta creada )
+	"Yo, como usuario ya registrado.
+	 Quiero, poder ingresar con mi correo y contraseña.
+	 Para, optimizar y ocupar la red social."
+​
+➡ Criterios de aceptación: En la AppWeb muestra un botón donde estan los  campos para ingresar el correo y contraseña. El usuario debe poder escribir su correo  y contraseña, y  apretar el botón de iniciar sesión. Si los datos son válidos, el usuario puede ingresar a la red social pero si los datos no son válidos se genera un mensaje de error.
+
+### Historia de Usuario 4 : Publicar en el muro 
+	"Yo, como estudiante.
+	 Quiero, ver y poder publicar en  el muro  de la App.
+	 Para,  informarme de las novedades, subir publicaciones y estar al tanto de todo lo que pasa."
+​
+➡ Criterios de aceptación: En la página del muro, se permitirá al usuario escribir a través de un cuadro de texto, y así informar a la comunidad o el fin que el usuario quiera. 
+​
+### Historia de Usuario 5: Editar Publicación
+"Yo, como estudiante.
+	 Quiero, editar la publicación que subí en mi muro .
+	 Para, colocar otros datos y fuentes que me faltaron."
+​
+➡ Criterios de aceptación: En la página del muro, existirá un botón para poder editar lo escrito, y poder publicar lo que realmente quiero.
+
+### Historia de Usuario 6: Eliminar Publicación
+"Yo, como estudiante.
+	 Quiero, eliminar la publicación.
+	 Para, poder subir otra de un tema mas interesante."
+​
+➡ Criterios de aceptación: En la página del muro, habrá un botón de eliminar para no visualizar lo escrito.
+
+### Historia de Usuario 7 : Dar Like y contabilizar.
+"Yo, como estudiante.
+	 Quiero, dar likes y contabilizarlos.
+	 Para,  informar que me gusta la publicación."
+​
+➡ Criterios de aceptación: En la pagina del muro, se verá un botón para que el usuario pueda colocar Likes .
+​
+
+​## Diagrama de Flujo  
+​
+A partir de las historias de usuario se define el flujo básico de la aplicación:
+
+ ![diagrama-flujo](src/assets/img/diagramaflujo.jpeg) 
+
+
+​
+## Planificación 
+​
+Se definen acciones y funciones que nuestro usuario necesita y quiere realizar dentro de la app para lograr sus objetivos. La planificación se realizó mediante un trabajo colaborativo en Trello, el cuál puedes revisar en el siguiente link [LinkTrello](https://trello.com/b/FSFHhEWS/red-social) y utilizando ceremonias ágiles para verificar las tareas que va realizando cada miembro del equipo así detectamos a tiempo bloqueos, dailys y retrospectivas diarias.
+​
+​
+## Diseño de Interfaz
+​
+####Prototipo de Baja Fidelidad 
+
+ ![Prototipode BF](src/assets/img/PrototipoBF.jpg) 
+​
+####Prototipo de Alta Fidelidad 
+​
+Después de la definición de usuario, de sus características, intereses y gustos, se define el diseño visual de nuestra aplicación en términos de color, fuente, logo y contenido de imágenes entre otros.
+​
+Para la paleta de colores se establecio viendo todos los colores que eran usados por laboratoria en las redes sociales, donde predomina el amarillo, rosado, verde, negro y escala de grises. 
+​
+​
+##Organización del Squads en Trello:
+https://trello.com/b/FSFHhEWS/laboratorian-red-social
+
+​
+## Evaluación Heurística 
+Realizamos la evaluación para nuestra página web en el siguiente sitio: [haz click aquí](https://docs.google.com/spreadsheets/d/1kQ9hsZ9nWkKCiiaW9uN-zUcRCISYY0WRtSaQyXn-XV0/edit?usp=sharing)
+​
+##Consideraciones técnicas ( Build with )
+​
+- Vanilla Javascript (ES6)
+- Firebase - // Firestore
+- HTML5
+- CSS
+- Figma // AdobeXD
+​
+### Desarrolladoras
+​
+- [Adriana Sánchez](https://github.com/adrievelyn)
+- [Alejandra Morales](https://github.com/AlejandraMoralesB)
+- [Cynthia Gómez](https://github.com/cynthiagomezmontoya)
+- [Paula Estay ](https://github.com/paulaestayc)
+
+​
