@@ -1,0 +1,43 @@
+{
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "social network project for laboratoria",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "jest --coverage",
+    "eslint": "eslint --ext .js src/ test/",
+    "htmlhint": "htmlhint src/*.html",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "deploy": "gh-pages -d src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laboratoria/SCL010-Social-Network.git"
+  },
+  "keywords": [
+    "social",
+    "network",
+    "laboratoria",
+    "010",
+    "SCL"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laboratoria/SCL010-Social-Network/issues"
+  },
+  "homepage": "https://github.com/Laboratoria/SCL010-Social-Network#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-jest": "^22.14.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.3.0",
+    "gh-pages": "^2.0.1",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.8.0"
+  }
+}
